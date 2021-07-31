@@ -42,7 +42,7 @@ public class Main {
     }
 
     private static void printWeather(JsonObject jsonObject){
-        System.out.printf("Координаты города: с.ш. %s, в.д. %s\n", jsonObject.get("lat").toString(), jsonObject.get("lon").toString());
+        System.out.printf("Координаты города Уфы: с.ш. %s, в.д. %s\n", jsonObject.get("lat").toString(), jsonObject.get("lon").toString());
         JsonArray daily = jsonObject.get("daily").getAsJsonArray();
 
         double diffNightMorn = 30d;
